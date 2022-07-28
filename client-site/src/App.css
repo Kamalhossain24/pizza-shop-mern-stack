@@ -1,0 +1,55 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-bg {
+    background: #000;
+    opacity: .5;
+}
+.display-hedding {
+    font-size: calc(1.525rem + 3.3vw);
+    font-weight: 300;
+    line-height: 1.2;
+}
+.fs-disc{
+    font-size: calc(1.325rem + .9vw)!important;
+}
+.p-hero {
+    padding: 3rem!important;
+}
+@media screen and (max-width :992px ) {
+    .hero_btn_none {
+       display: none;
+    }
+    .fs-disc{
+        font-size: 15px !important;
+    }
+    .display-hedding {
+        font-size: 23px;
+        font-weight: 300;
+        line-height: 0.5;
+    }
+    .p-hero {
+        padding: 1rem!important;
+    }
+}
+
+.all-center {
+    display: flex;
+    justify-content: center;
+}
+
+img.avatar_dp {
+    width: 42px;
+    border-radius: 50%;
+}

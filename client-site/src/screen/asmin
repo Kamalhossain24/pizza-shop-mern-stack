@@ -1,0 +1,76 @@
+import React from 'react'
+import { Row, Col, Container, Button, ButtonGroup } from "react-bootstrap";
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { LinkContainer } from 'react-router-bootstrap';
+import { Link } from 'react-router-dom';
+
+const AdminScreen = () => {
+    return (
+        <>
+            <div className="container-fluid">
+                <div className="row">
+                    <nav id="sidebarMenu" style={{ "min-height": "100vh" }} className="p-0 col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+                        <Link to="/admin" className="d-flex mt-2 align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
+                            <span className="fs-4 ">&nbsp;Admin Pannel</span>
+                        </Link>
+                        <hr className='text-light ' />
+                        <div className="position-sticky pt-3">
+                            <ul className="nav nav-pills flex-column mb-auto">
+                                <li className="nav-item">
+                                    <a href="/admin/user" className="nav-link active" aria-current="page">
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <hr className='text-light m-0' />
+                                <li>
+                                    <a href="/admin/user" className="nav-link link-light">
+                                        Add New Pizza
+                                    </a>
+                                </li>
+                                <hr className='text-light m-0' />
+                                <li>
+                                    <a href="/admin/user" className="nav-link link-light">
+                                        All Users
+                                    </a>
+                                </li>
+                                <hr className='text-light m-0' />
+                                <li>
+                                    <a href="/admin/user" className="nav-link link-light">
+                                        All Orders
+                                    </a>
+                                </li>
+                                <hr className='text-light m-0' />
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4"><div className="chartjs-size-monitor"><div className="chartjs-size-monitor-expand"><div className=""></div></div><div className="chartjs-size-monitor-shrink"><div className=""></div></div></div>
+                        <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                            <h1 className="h2">Admin Dashboard</h1>
+                            <div className="btn-toolbar mb-2 mb-md-0">
+                                <div className="btn-group me-2">
+                                    <button type="button" className="btn btn btn-outline-secondary">Share</button>
+                                    <button type="button" className="btn btn btn-outline-secondary">Export</button>
+                                </div>
+                                <button
+                                    type="button"
+                                    className="btn btn btn-outline-secondary"
+                                //onClick={() => { dispatch(logoutUser()) }}
+                                >
+                                    <i className='fa fa-user'></i>
+                                    Logout
+                                </button>
+                            </div>
+                        </div>
+
+
+
+
+                    </main>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default AdminScreen
